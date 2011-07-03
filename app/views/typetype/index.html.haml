@@ -1,0 +1,15 @@
+%h3
+  currently we have
+  = texts_count
+  texts. 0 people have taken the challenge!
+
+= render :partial => 'typetype/categories_list'
+
+%ul#texts_box
+  = render :partial => 'texts/text', :collection => @texts
+.dummy
+
+%p
+  are you
+  = link_to 'the Boss', admin_path
+  ?

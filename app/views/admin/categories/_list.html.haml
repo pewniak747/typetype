@@ -1,0 +1,21 @@
+%h2
+  showing #{@categories.count} out of #{categories_count} categories 
+
+%p
+  sort by:
+  = link_to 'name', :action => action_name, :controller => controller_name, :category_order => 'name'
+  | 
+  = link_to 'date', :action => action_name, :controller => controller_name, :category_order => 'date'
+  | 
+  = link_to 'texts', :action => action_name, :controller => controller_name, :category_order => 'texts'
+  | 
+  = link_to content_tag(:strong, 'add new category'), new_admin_category_path
+
+%ul#categories_list
+  = render :partial => 'admin/categories/category', :collection => @categories
+  - if categories_count > @categories.size
+    %li{:class => cycle("even", "odd")}
+      %p
+        = link_to "see all #{categories_count}", admin_categories_path
+
+

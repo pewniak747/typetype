@@ -1,0 +1,9 @@
+= render :partial => 'typetype/categories_list'
+
+%ul#texts_box
+  - unless @texts.empty?
+    = render :partial => 'texts/text', :collection => @texts
+  - else
+    %h2 Ooops! No texts found!
+    %h3 Run rake db:setup or contact system admin
+.dummy

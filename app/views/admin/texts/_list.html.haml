@@ -1,0 +1,24 @@
+%h2 
+  showing #{@texts.count} out of #{texts_count} texts
+
+%p
+  sort by:
+  = link_to 'popularity', :controller => controller_name, :action => action_name, :text_order => "popularity"
+  | 
+  = link_to 'date', :controller => controller_name, :action => action_name, :text_order => "date"
+  | 
+  = link_to 'title', :controller => controller_name, :action => action_name, :text_order => "title" 
+  | 
+  = link_to 'author', :controller => controller_name, :action => action_name, :text_order => "author" 
+  | 
+  = link_to 'words', :controller => controller_name, :action => action_name, :text_order => "words" 
+  | 
+  = link_to content_tag(:strong, 'add new text'), new_admin_text_path
+
+%ul#texts_list
+  = render :partial => 'admin/texts/text', :collection => @texts
+  - if texts_count > @texts.size
+    %li{:class => cycle("even", "odd")}
+      %p
+        = link_to "see all #{texts_count}", admin_texts_path
+

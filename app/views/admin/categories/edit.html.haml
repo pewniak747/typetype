@@ -1,0 +1,11 @@
+- if flash[:error]
+  %p
+    errors occured:
+    = flash[:error]
+
+= form_for :category, :url => admin_category_path(@category), :method => :put do |f|
+  = f.label :name, 'name'
+  = f.text_field :name
+  %br
+
+  = f.submit 'submit'

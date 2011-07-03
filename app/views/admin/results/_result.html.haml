@@ -1,0 +1,11 @@
+%li{:class => "#{cycle("even", "odd")} #{"cheat" if result.cheat}"}
+  %p
+    = link_to content_tag(:strong, result.text.title), admin_text_path(result.text)
+    = "| #{result.name} : #{convert_time result.time}"
+    
+    = link_to "&times".html_safe, admin_result_path(result), :method => :delete, :class => "danger"
+    - if result.cheat
+      = link_to "uncheat", admin_result_path(result, :cheat => false), :method => :put, :class => "danger"
+    - else
+      = link_to "cheat", admin_result_path(result, :cheat => true), :method => :put, :class => "danger"
+     

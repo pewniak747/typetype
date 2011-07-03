@@ -1,0 +1,80 @@
+---
+categories: 
+  - 
+    name: books
+  - 
+    name: songs
+  -
+    name: fiction
+  -
+    name: poems
+  -
+    name: other
+  -
+    name: movies
+  - 
+    name: tongue twisters
+
+texts:
+  -
+    title: Desiderate
+    author: Max Ehrmann
+    body: "Go placidly amid the noise and haste,and remember what peace there may be in silence. As far as possible without surrenderbe on good terms with all persons. Speak your truth quietly and clearly;and listen to others, even the dull and the ignorant;they too have their story. Avoid loud and aggressive persons,they are vexations to the spirit" 
+    categories: 
+      - poems
+  -
+    title: Hamlet
+    author: William Shakespeare
+    body: "To be, or not to be: that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take arms against a sea of troubles, And by opposing end them?"
+    categories:
+      - books
+      - poems
+  -
+    title: Nineteen Eighty-Four
+    author: George Orwell
+    body: "The Ministry of Truth - Minitrue, in Newspeak - was startlingly different from any other object in sight. It was an enormous pyramidal structure of glittering white concrete, soaring up, terrace after terrace, three hundred meters into the air. From where Winston stood it was just possible to read, picked out on its white face in elegant lettering, the three slogans of the Party: WAR IS PEACE FREEDOM IS SLAVERY IGNORANCE IS STRENGTH."
+    categories: 
+      - books
+      - fiction
+  -
+    title: Wonderful World
+    author: Louis Armstrong
+    body: "I see trees of green ... red roses too.I see them bloom ... for me and you.And I think to myself ... what a wonderful world!I see skies of blue ... and clouds of white.The bright blessed day ... the dark sacred night.And I think to myself ... what a wonderful world!The colours of the rainbow ... so pretty in the sky.Are also on the faces ... of people going by.I see friends shaking hands ... sayin': \"How do you do?\"They're really sayin' ... I love you."
+    categories:
+      - songs
+  - 
+    title: Forrest Gump
+    author: Tom Hanks
+    body: "My Mama always said, 'Life was like a box of chocolates; you never know what you're gonna get.'"
+    categories:
+      - movies
+  - 
+    title: Woodchuck
+    author: unknown
+    body: "How much wood could Chuck Woods' woodchuck chuck, if Chuck Woods' woodchuck could and would chuck wood?"
+    categories:
+      - tongue twisters
+  - 
+    title: Seashells
+    author: unknown
+    body: "She sells sea shells on the seashore.The seashells she sells are seashells she is sure."
+    categories:
+      - tongue twisters
+  -
+    title: Lorem Ipsum
+    author: unknown
+    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec leo lectus, volutpat vel tristique nec, porttitor et felis. Donec ultrices laoreet condimentum. Morbi consectetur consectetur justo luctus lacinia. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas lectus justo, aliquam vel venenatis eu, posuere a risus. Praesent mollis cursus urna, nec auctor nunc scelerisque eu. Nunc non ante quam. Donec pharetra felis nec tellus pharetra cursus. Donec at lorem hendrerit metus molestie scelerisque non non ligula. Vestibulum et urna sem, ut suscipit nibh. Curabitur vitae dolor malesuada est tempor volutpat. Pellentesque nibh justo, imperdiet nec mattis et, aliquet a augue. Donec vel purus id nunc ultricies dignissim bibendum et justo. Quisque sed risus vel lacus vulputate placerat."
+    categories:
+      - other
+  -
+    title: Declaration of Independence
+    author: Founding Fathers
+    body: "When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.--That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed"
+    categories:
+      - other
+  -
+    title: 1 Corinthians 13
+    author: Paul the Apostle
+    body: "Though I speak with the tongues of men and of angels, and have not love, I am become as sounding brass, or a tinkling cymbal. And though I have the gift of prophecy, and understand all mysteries, and all knowledge; and though I have all faith, so that I could remove mountains, and have not love, I am nothing. And though I bestow all my goods to feed the poor, and though I give my body to be burned, and have not love, it profiteth me nothing."
+    categories:
+      - books

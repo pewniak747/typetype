@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+%html
+  %head
+    %title typetype
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tags 
+  %body{:class => controller_name}
+    #header
+      - if controller_path =~ /admin/
+        = render :partial => 'admin/admin_header'
+      - else
+        = render :partial => 'typetype/typetype_header'
+    - if request.path == '/'
+      #welcome
+        %h2 typetype allows You to practice touch typing on classics. 
+        %h3 challenge yourself and beat the highscore!
+    #container
+      = yield 
+    %hr.dummy
+    %p
+      copyright &copy; 2011 by Tomasz 'pewniak747' Pewiński. 
+      Are you
+      = link_to 'the Boss', admin_path
+      ?
+

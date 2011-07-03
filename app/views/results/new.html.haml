@@ -1,0 +1,29 @@
+#categories_nav
+  %h4
+    = link_to "return to #{@text.title}", text_path(@text)
+    | 
+    = link_to "return to browsing", root_path
+    | 
+    = link_to "retry", new_result_path(@text)
+
+#typing_box{:class => @text.id}
+  #properties
+    %p now typing:
+    %h2
+      = @text.title
+    %h3
+      by
+      = @text.author
+    #progress
+      = tag :progress
+    #hint
+      %p press first letter to set off the clock!
+    #statistics
+      %p
+        %span#time 0.0 s
+  #typewriter
+    %ul
+      %li#submit
+        = form_for @result, :url => create_result_path(@text)  do |f|
+          = f.text_field :name, :value => "Anonymous"
+          = f.submit 'submit'

@@ -1,0 +1,12 @@
+#categories_nav
+  %h4
+    texts:
+    = link_to 'popular', popular_texts_path, :class => selected_link?("popular")
+    | 
+    = link_to 'fresh', fresh_texts_path, :class => selected_link?("fresh")
+    | 
+    = link_to 'all', texts_path, :class => selected_link?("index")
+    categories:
+    - @categories.each do |category|
+      = link_to "#{category.name} (#{category.texts.size})", category_path(category), :class => selected_link?(category.id)
+      = "| " if category.id != @categories.last.id

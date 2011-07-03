@@ -1,0 +1,11 @@
+#admin_header
+  %h1 typetype admin dashboard
+  = link_to 'admin home', admin_path
+  | 
+  = link_to "results (#{results_count "all"})", admin_results_path(:result_filter => "all")
+  | 
+  = link_to "texts (#{texts_count})", admin_texts_path
+  | 
+  = link_to "categories (#{categories_count})", admin_categories_path
+  | 
+  = link_to "log out", root_path

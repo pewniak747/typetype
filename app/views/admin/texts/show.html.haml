@@ -1,0 +1,21 @@
+%h2
+  = @text.title
+
+%h3 
+  = @text.author
+
+
+= link_to 'edit', edit_admin_text_path(@text)
+| 
+= link_to 'delete', admin_text_path(@text), :method=> :delete
+| 
+= link_to 'go back', admin_path
+
+%p 
+  added at
+  = @text.created_at
+
+- word_wrap(truncate(@text.body, :length => 500)).split("\n").each do |line|
+  = content_tag :p, line
+
+= render :partial => 'categories_list'

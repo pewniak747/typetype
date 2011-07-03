@@ -1,0 +1,8 @@
+#properties
+  %h2 #{convert_time @result.time}, #{@result.wpm} WPM
+  %h3 
+    = medal_image result_place(@result)
+    #{result_place_text @result}
+
+  = link_to 'retry', new_result_path(@text), :class => "start_button"
+  = render :partial => 'results_box'

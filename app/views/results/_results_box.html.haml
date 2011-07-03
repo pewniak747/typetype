@@ -1,0 +1,4 @@
+#text_results_box
+  %h2 best results
+  %ol
+    = render :partial => 'results/result', :collection => @text.results.order("time ASC").limit(5)

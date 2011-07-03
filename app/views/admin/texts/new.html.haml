@@ -1,0 +1,17 @@
+- if flash[:error]
+  %p errors occured: 
+  = flash[:error]
+= form_for :text, :url => admin_texts_path do |f|
+  = f.label :title, 'title'
+  = f.text_field :title
+  %br
+
+  = f.label :author, 'author'
+  = f.text_field :author
+  %br
+  
+  = f.text_area :body
+  %br
+
+  = f.submit 'submit'
+

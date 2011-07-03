@@ -1,0 +1,88 @@
+/* 
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+  You can use Sass (SCSS) here: http://sass-lang.com/
+*/
+
+#texts_box {
+  margin: 10px;
+  li.text_box {
+    float: left;
+    display: inline-block;
+    width: 220px;
+    height: 100px;
+    a {
+      padding: 10px;
+      display: block;
+      text-decoration: none;
+      outline: none;
+      &:hover {
+        //background-color: #e1e1e1;
+        border-radius: 5px;
+        box-shadow: 0 0  5px #d1d1d1;
+        -moz-box-shadow: 0 0  5px #d1d1d1;
+      }
+    }
+    img {
+      float: left;
+      color: #fff;
+      margin: 5px;
+    }
+  }
+}
+
+#text_box {
+  width: 520px;
+  float: left;
+  margin: 10px;
+  #cover {
+    float: left;
+    width: 100px;
+    padding: 10px;
+    img {
+      width: 100%;
+    }
+  }
+  #details {
+    float: left;
+    width: 400px;
+  }
+}
+
+#text_results_box {
+  margin: 10px;
+  float: left;
+  text-align: left;
+  h2 {
+    text-align: center;
+  }
+  ol {
+    li {
+      height: 32px;
+      img {
+        float: left;
+      }
+      p {
+        margin-left: 32px;
+        font-size: 12px;
+        padding: 3px 0;
+        span.time {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+
+.start_button {
+  padding: 5px;
+  background-color: #06d;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  &:hover {
+    color: #fff;
+    background-color: #06c;
+  }
+}

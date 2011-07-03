@@ -1,0 +1,8 @@
+%li.text_box
+  %a{:href => text_path(text)}
+    = text_icon text
+    %p
+      = content_tag :strong, text.title
+    %p
+      = text.author
+    %p #{text.words_count}  words, #{text.results.size} people

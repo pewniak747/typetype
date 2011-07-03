@@ -1,0 +1,8 @@
+%li{:class => "#{cycle("even", "odd")}"}
+  %p
+    = link_to content_tag(:strong, category.name), admin_category_path(category)
+    | texts: 
+    = category.texts.size
+    | 
+    = link_to 'edit', edit_admin_category_path(category)
+    = link_to 'delete', admin_category_path(category), :method=> :delete, :class=> "danger"

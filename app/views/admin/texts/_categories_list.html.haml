@@ -1,0 +1,8 @@
+%h3 categories:
+- @text.categories.each do |category| 
+  = link_to "#{h category.name} &times".html_safe, admin_text_uncategorize_path(@text, category), :method => :post
+
+%h3 add category:
+- @available_categories.each do |category|
+  = link_to category.name, admin_text_categorize_path(@text, category), :method => :post
+

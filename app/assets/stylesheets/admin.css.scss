@@ -1,0 +1,27 @@
+// Place all the styles related to the admin controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body.admin {
+  // Place scoped styles here
+  h2 {
+    font-size: 15px;
+    height: 30px;
+    font-weight: bold;
+  }
+  #admin_texts_box {
+    float: left;
+    width: 49%;
+    padding: 5px;
+  }
+  #admin_results_box {
+    float: left;
+    width: 29%;
+    padding: 5px;
+  }
+  #admin_categories_box {
+    float: left;
+    width: 19%;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,14 @@
+%h2
+  = @category.name
+
+%h3 
+  = @category.texts.size
+  texts in this category:
+
+%ul
+  = render :partial => 'admin/texts/text', :collection => @category.texts
+
+%hr
+= link_to 'edit', edit_admin_category_path(@category)
+= link_to 'delete', admin_category_path(@category), :method=> :delete
+= link_to 'go back', admin_path

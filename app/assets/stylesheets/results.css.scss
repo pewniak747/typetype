@@ -1,0 +1,83 @@
+/* 
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+  You can use Sass (SCSS) here: http://sass-lang.com/
+*/
+
+body {
+  overflow-x: hidden;
+}
+
+#typing_box {
+  position: relative;
+  #text_results_box {
+    margin: auto;
+    width: 300px;
+    float: none;
+  }
+}
+
+#properties {
+  text-align: center;
+  padding: 20px;
+  width: 300px;
+  margin: auto;
+}
+
+#hint {
+  height: 20px;
+}
+
+#progress {
+  display: none;
+  height: 20px;
+  progress {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+#statistics {
+  text-align: center;
+  margin: 10px;
+  p {
+    font-size: 2em;
+  }
+}
+
+#typewriter {
+  border: 3px double #e1e1e1;
+  form {
+    display: inline-block;
+  }
+}
+
+#typewriter ul {
+  position: relative;
+  right: 0px;
+  height: 44px;
+}
+
+#typewriter li {
+  float: left;
+  display: inline-block;
+  font-family: Monospace;
+  width: 20px;
+  height: 24px;
+  font-size: 20px;
+  padding: 10px 0;
+  text-align: center;
+  &.correct {
+    color: green;
+    background-color: #9FFF80;
+  }
+  &.wrong {
+    background-color: #FF8080;
+  }
+  &.current {
+    background-color: #e1e1e1;
+  }
+  &#submit {
+    width: 500px;
+  }
+}

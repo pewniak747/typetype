@@ -1,0 +1,19 @@
+%h2
+  showing #{@results.count} out of #{results_count "all"} results 
+
+%p
+  show:
+  = link_to 'all', :controller => controller_name, :action => action_name, :result_filter => 'all'
+  | 
+  = link_to 'valid only', :controller => controller_name, :action => action_name
+  | 
+  = link_to 'cheats only',:controller => controller_name, :action => action_name, :result_filter => 'cheat'
+
+%ul#categories_list
+  = render :partial => 'admin/results/result', :collection => @results
+  - if results_count > @results.size
+    %li{:class => cycle("even", "odd")}
+      %p
+        = link_to "see all #{results_count}", admin_results_path(:result_filter => params[:result_filter])
+
+

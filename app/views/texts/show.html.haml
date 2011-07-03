@@ -1,0 +1,26 @@
+#categories_nav
+  %h4
+    = link_to 'return to browsing', root_url
+#text_box
+  #cover
+    = text_icon @text
+  #details
+    %h2
+      = @text.title
+    %h3
+      by 
+      = @text.author
+    = link_to 'start typing', new_result_path(@text), :class => "start_button"
+    %h4 
+      in: 
+      - @text.categories.each do |category|
+        = link_to category.name, category_path(category)
+    %h4
+      contains
+      = @text.words_count
+      words
+    %p
+      = truncate(@text.body, :length => 100)
+
+= render 'results/results_box'
+

@@ -1,0 +1,14 @@
+%li{:class => "#{cycle("even", "odd")}"}
+
+  = link_to 'delete', admin_text_path(text), :method=> :delete, :class=> "danger"
+  - if controller_name == 'categories'
+    = link_to 'remove from category', admin_text_uncategorize_path(text.id, @category.id), :method => :post, :class => "danger"
+
+  %p
+    = link_to content_tag(:strong, text.title), admin_text_path(text)
+    by #{text.author} 
+  %p
+    #{text.words_count} words | #{text.results.size} people
+    | categories: 
+    - text.categories.each do |category|
+      = link_to category.name, admin_category_path(category)
